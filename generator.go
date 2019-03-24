@@ -109,16 +109,3 @@ func (mTS *MerkelTreeStream) Next(data *[]uint8, nodes *[]DefaultNode) {
 		*nodes = append(*nodes, tempNode)
 	}
 }
-
-/*
-
-type TreeOpts struct {
-	// TODO: This is probably wrong.
-	Leaf   func(leaf PartialNode, roots []Node) Hash
-	Parent uint
-}
-
-func MerkelGenerator(opts uint, roots uint) {
-
-}
-*/
